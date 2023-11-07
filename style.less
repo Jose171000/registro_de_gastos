@@ -1,0 +1,24 @@
+.general(@flexDi){
+    display: flex;
+    flex-direction: @flexDi;
+    align-items: center;
+    justify-content: center;
+}
+@inputs: 300px;
+
+
+.titulo{
+    .general(row);
+}
+
+.formulario{
+    .general(column);
+    gap: 10px;
+    transform: scale(1.1);
+}
+input{
+    width: @inputs;
+}
+textarea{
+    width: @inputs;
+}
